@@ -1,0 +1,45 @@
+<!-- main page where you look @ profiles-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>B&B Match Making</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<div style="font-weight:italic;color:rgb(230,183,73);font-family:Arial, Helvetica, sans-serif;">This is the matching page</div>
+	<br>
+	<h3>Find</h3>
+	<hr>
+	<form action="#">
+		<fieldset>
+			<legend>Matching</legend>
+			<div>
+                <!-- put current name here -->
+				<label for="username">Name:</label>
+				<input id="username" type="text" name="username" value="name">
+				
+				<br>
+						<label for="typpe">Likes</label>
+						<input type="checkbox" id="likes" name="typpe" value="likes">
+						<br>
+                        <label for="typpe">Dislikes </label>
+						<input type="checkbox" id="dislikes" name="typpe" value="dislikes">
+					
+			</div>
+		</form></fieldset>
+			<input type="submit" value="Submit" id="submit">
+	<div class="divClass">
+		<p class="pClass">Insert paragraph here/ we'll add images later</p> 
+        <p class="pClass">Yay or Nay</p>
+	</div>
+
+	<!-- Here is a comment -->
+
+	<script type="text/javascript">
+		var theDiv = document.getElementById("myDiv");
+		console.log("The content is " + theDiv.innerHTML);
+	</script>
+
+	<p>Here is a <span style="font-style:bold ;color:rgb(98, 0, 255);">paragraph</span> of some text</p>
+</body>
+</html>

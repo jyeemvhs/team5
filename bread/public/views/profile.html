@@ -1,0 +1,425 @@
+<!-- main page where you look @ profiles-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>B&B Personal Profile</title>
+	<link href="style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+</head>
+<body>
+	<div style="font-weight:italic;color:rgb(230,183,73);font-family:Arial, Helvetica, sans-serif;">This is the matching page</div>
+	<br>
+	<h3>Find</h3>
+	<hr>
+	<form action="#">
+		<fieldset>
+			<legend>Personal Info</legend>
+			<div>
+                <!-- put current name here -->
+				<label for="username" class="title">Name:</label>
+				
+				<br>
+				<label for="quizResult" id ="quizResult" class="title">I am ......</label>
+				<br>
+				<br>
+				<label for="Dislikes" class="title" >Dislikes</label>
+				<!-- display likes here -->
+				<select id="Dislikes" name="Dislikes" class="list">
+							<option selected="selected" id="0"> Soggy Bread&Butter</option>
+
+					<option id="1 ">Acne </option>
+					<option id="2 ">Adding the f-bomb to every phrase</option>
+					<option id="3 ">Adult cartoons </option>
+					<option id="4 ">Alarm clocks</option>
+					<option id="5 ">Animal cruelty</option>
+					<option id="6 ">Arguing for the sake of arguing</option>
+					<option id="7 ">Assembly required furniture with missing hardware</option>
+					<option id="8 ">Attending school concerts</option>
+					<option id="9 ">Awkward silences</option>
+					<option id="10 ">Being put “on hold” after waiting several minutes with a full bladder</option>
+					<option id="11 ">Boy bands </option>
+					<option id="12 ">Breaking in new shoes</option>
+					<option id="13 ">Bronzing lotion</option>
+					<option id="14 ">Burnt coffee (too much time on the heating element)</option>
+					<option id="15 ">Cards that are meant to be kept</option>
+					<option id="16 ">Celebrities that charge for an autograph</option>
+					<option id="17 ">Certain clothing styles best left to the past </option>
+					<option id="18 ">Certain hairstyles best forgotten (e.g., the mullet)</option>
+					<option id="19 ">Certain instruments </option>
+					<option id="20 ">Certain words (e.g., moist, supple, guaranteed, okey-dokey…)</option>
+					<option id="21 ">Chalkboards and chalk</option>
+					<option id="22 ">Cleaning </option>
+					<option id="23 ">Cleaning out the fridge</option>
+					<option id="24 ">Closed spaces</option>
+					<option id="25 ">Clowns / mimes / puppets</option>
+					<option id="26 ">Cold fries</option>
+					<option id="27 ">Complaining </option>
+					<option id="28 ">Craft parties</option>
+					<option id="29 ">Crickets… in the house</option>
+					<option id="30 ">Crowds </option>
+					<option id="31 ">Deadlines </option>
+					<option id="32 ">Decorating with hunting trophies</option>
+					<option id="33 ">Dioramas </option>
+					<option id="34 ">Eating contests </option>
+					<option id="35 ">Edible underwear (why?)</option>
+					<option id="36 ">Escape rooms</option>
+					<option id="37 ">Explosive… anything</option>
+					<option id="38 ">Extreme cold</option>
+					<option id="39 ">Facebook	75</option>
+					<option id="40 ">Facial hair </option>
+					<option id="41 ">Fairy tales where couples get married after spending five minutes together</option>
+					<option id="42 ">Felt-tip markers</option>
+					<option id="43 ">Five-alarm chili</option>
+					<option id="44 ">Flash mobs</option>
+					<option id="45 ">Flashing lights</option>
+					<option id="46 ">Flavored coffee creamers</option>
+					<option id="47 ">Funerals</option>
+					<option id="48 ">Gangsta rap </option>
+					<option id="49 ">Getting lost </option>
+					<option id="50 ">Glitter </option>
+					<option id="51 ">Gossip</option>
+					<option id="52 ">Grocery stores on the weekend</option>
+					<option id="53 ">Guests walking barefoot in your house</option>
+					<option id="54 ">Hackers bullying small children on Minecraft, Roblox, etc.</option>
+					<option id="55 ">Hallmark movies</option>
+					<option id="56 ">Hangnails</option>
+					<option id="57 ">Hats</option>
+					<option id="58 ">Having your picture taken</option>
+					<option id="59 ">Hazing </option>
+					<option id="60 ">Heat and humidity</option>
+					<option id="61 ">Hiccups</option>
+					<option id="62 ">Holes in the toe or heel of your socks</option>
+					<option id="63 ">Improv</option>
+					<option id="64 ">Insects that get into the house (flies, gnats, ants, etc.)</option>
+					<option id="65 ">Instant coffee</option>
+					<option id="66 ">Jean jackets </option>
+					<option id="67 ">Jump scares</option>
+					<option id="68 ">Junk mail</option>
+					<option id="69 ">Ketchup</option>
+					<option id="70 ">KidsBop</option>
+					<option id="71 ">Leaky pens</option>
+					<option id="72 ">Leggings as pants</option>
+					<option id="73 ">Light beer</option>
+					<option id="74 ">Lima beans</option>
+					<option id="75 ">Loose, oversized clothing </option>
+					<option id="76 ">Lukewarm beer</option>
+					<option id="77 ">Lukewarm coffee </option>
+					<option id="78 ">Man hammocks</option>
+					<option id="79 ">Mazes </option>
+					<option id="80 ">Mean girls (or wannabe mean girls)</option>
+					<option id="81 ">Mess or Clutter</option>
+					<option id="82 ">Miniature golf</option>
+					<option id="83 ">MLM parties </option>
+					<option id="84 ">Moshing (also called slam dancing or slamming)</option>
+					<option id="85 ">Mugs that get too hot in the microwave</option>
+					<option id="86 ">Mushrooms </option>
+					<option id="87 ">Muzak/elevator music</option>
+					<option id="88 ">Nair hair removal cream</option>
+					<option id="89 ">Necromancy </option>
+					<option id="90 ">Overhearing something you can’t unhear from your dorm room</option>
+					<option id="91 ">Pants under skirts</option>
+					<option id="92 ">Paperwork</option>
+					<option id="93 ">Parkour </option>
+					<option id="94 ">Peeps</option>
+					<option id="95 ">People riding horses like it’s NOTHING</option>
+					<option id="96 ">Perfume or specific scent</option>
+					<option id="97 ">PewDiePie</option>
+					<option id="98 ">Picasso </option>
+					<option id="99 ">Play-doh in the carpet</option>
+					<option id="100 ">Politics </option>
+					<option id="101 ">Pranks </option>
+					<option id="102 ">Puns </option>
+					<option id="103 ">Queerbaiting (see Supernatural or Netflix’s Voltron)</option>
+					<option id="104 ">Riddles</option>
+					<option id="105 ">Running errands</option>
+					<option id="106 ">Sandalwood </option>
+					<option id="107 ">Scarecrows </option>
+					<option id="108 ">Scars from experiences you’d rather forget</option>
+					<option id="109 ">Scat singing (jazz)</option>
+					<option id="110 ">Scavenger hunts</option>
+					<option id="111 ">Shopping on Black Friday</option>
+					<option id="112 ">Shows that kill off their gay characters (see Supernatural, The 100, etc.)</option>
+					<option id="113 ">Snakes</option>
+					<option id="114 ">Snoring </option>
+					<option id="115 ">Socks with sandals</option>
+					<option id="116 ">Speaking in code </option>
+					<option id="117 ">Speedos</option>
+					<option id="118 ">Spiders</option>
+					<option id="119 ">Stomach flu and food poisoning </option>
+					<option id="120 ">Storage closets full of stacked storage bins</option>
+					<option id="121 ">Styrofoam</option>
+					<option id="122 ">Surprises</option>
+					<option id="123 ">Sweat on exercise equipment</option>
+					<option id="124 ">Talking during movies </option>
+					<option id="125 ">Tattoos of your S.O.’s name </option>
+					<option id="126 ">Tattoos with spelling errors</option>
+					<option id="127 ">Tepid soup</option>
+					<option id="128 ">That guy who always pees in the pool</option>
+					<option id="129 ">The Epilady</option>
+					<option id="130 ">The neighbor’s eye-watering cooking spices filling the air in your apartment</option>
+					<option id="131 ">The reverberations from a neighbor’s heavy bass</option>
+					<option id="132 ">Tight, fitted clothing </option>
+					<option id="133 ">Tights as pants</option>
+					<option id="134 ">Tinfoil hats </option>
+					<option id="135 ">Topiaries </option>
+					<option id="136 ">Touching or stepping on someone’s chewing gum</option>
+					<option id="137 ">Trust-building exercises</option>
+					<option id="138 ">When you’re about to sneeze and then… nothing</option>
+					<option id="139 ">Whining </option>
+					<option id="140 ">Yo-yos </option>
+					<option id="141 ">Your college roommate treating your bed like her couch</option>
+							
+					</select>
+
+					<input type="button"  id="lbut" value="Submit Dislike">
+
+						<ul id="listl">
+						</ul>
+
+					
+			
+				<br>
+            <label for="Likes" class="title" >Likes </label>
+				<!-- display dislikes here 20 max-->
+			<select id="Likes" name="Likes" class="list">
+					<option selected="selected" id="0"> Bread&Butter</option>
+					<option id="1 ">A really good sneeze</option>
+					<option id="2 ">Abandoned buildings</option>
+					<option id="3 ">Accessories</option>
+					<option id="4 ">Adult coloring books</option>
+					<option id="5 ">All-you-can-eat shrimp</option>
+					<option id="6 ">Archery </option>
+					<option id="7 ">Astrology</option>
+					<option id="8 ">Astronomy </option>
+					<option id="9 ">Baking </option>
+					<option id="10 ">Bees and beekeeping</option>
+					<option id="11 ">Bicycling </option>
+					<option id="12 ">Bird-watching </option>
+					<option id="13 ">Blanket forts</option>
+					<option id="14 ">Book cover design</option>
+					<option id="15 ">Broadway musicals </option>
+					<option id="16 ">Building models</option>
+					<option id="17 ">Camping</option>
+					<option id="18 ">Candles and candle-making</option>
+					<option id="19 ">Canoeing or kayaking </option>
+					<option id="20 ">Car maintenance </option>
+					<option id="21 ">Cemeteries </option>
+					<option id="22 ">Clouds, mist, and fog</option>
+					<option id="23 ">Collecting </option>
+					<option id="24 ">Color Black</option>
+					<option id="25 ">Color Blue</option>
+					<option id="26 ">Color Green</option>
+					<option id="27 ">Color Orange</option>
+					<option id="28 ">Color Pink</option>
+					<option id="29 ">Color Purple</option>
+					<option id="30 ">Color Red</option>
+					<option id="31 ">Color White </option>
+					<option id="32 ">Color Yellow</option>
+					<option id="33 ">Comfortable silence </option>
+					<option id="34 ">Comic books </option>
+					<option id="35 ">Cookie butter</option>
+					<option id="36 ">Cooking </option>
+					<option id="37 ">Cosmetology </option>
+					<option id="38 ">Creating gift baskets</option>
+					<option id="39 ">Crocheting or Knitting</option>
+					<option id="40 ">Crystals</option>
+					<option id="41 ">Cultivated flowers (roses, peonies, orchids, etc.)</option>
+					<option id="42 ">Cyberpunk </option>
+					<option id="43 ">Dance (ballroom, freestyle, etc. Decorating for parties or holidays)</option>
+					<option id="44 ">Diving (into water or with a parachute)</option>
+					<option id="45 ">DIY Repair</option>
+					<option id="46 ">Documentaries </option>
+					<option id="47 ">Dollhouses and dollhouse furniture</option>
+					<option id="48 ">Drawing </option>
+					<option id="49 ">Dumpster diving</option>
+					<option id="50 ">Essential oils</option>
+					<option id="51 ">Exploring historical buildings/monuments</option>
+					<option id="52 ">Falconry</option>
+					<option id="53 ">Falling leaves </option>
+					<option id="54 ">Familiar scents (fresh cut grass, tobacco, cinnamon, etc.)</option>
+					<option id="55 ">Fishing </option>
+					<option id="56 ">Fleece-lined socks</option>
+					<option id="57 ">Foraging </option>
+					<option id="58 ">Forests/wilderness </option>
+					<option id="59 ">Fossils</option>
+					<option id="60 ">Gaming (Board Games)</option>
+					<option id="61 ">Gaming (Card Games)</option>
+					<option id="62 ">Gaming (TTRPG)</option>
+					<option id="63 ">Gaming (Video Games)</option>
+					<option id="64 ">Gardening </option>
+					<option id="65 ">Glass blowing</option>
+					<option id="66 ">Gnome collecting</option>
+					<option id="67 ">Going on retreats</option>
+					<option id="68 ">Guessing something correctlyHair coloring </option>
+					<option id="69 ">Hang gliding or parasailing </option>
+					<option id="70 ">Harvesting fresh fruits and vegetables</option>
+					<option id="71 ">Haunted houses</option>
+					<option id="72 ">Hiking </option>
+					<option id="73 ">Holidays </option>
+					<option id="74 ">Hooded scarves</option>
+					<option id="75 ">Horror fiction/horror movies</option>
+					<option id="76 ">Hot air balloons</option>
+					<option id="77 ">Ice sculptures </option>
+					<option id="78 ">Incense</option>
+					<option id="79 ">Interior decorating and design</option>
+					<option id="80 ">Jigsaw puzzles</option>
+					<option id="81 ">Journaling</option>
+					<option id="82 ">Jumping in puddles </option>
+					<option id="83 ">Jumping on a trampoline</option>
+					<option id="84 ">Lakes and lakeshores</option>
+					<option id="85 ">Landscaping </option>
+					<option id="86 ">Learning languages</option>
+					<option id="87 ">Lockpicking </option>
+					<option id="88 ">Lounging in a hammock</option>
+					<option id="89 ">Making espresso drinks</option>
+					<option id="90 ">Making flower crowns and leis</option>
+					<option id="91 ">Making jewelry (or buying handcrafted jewelry)</option>
+					<option id="92 ">Making lists / Planning</option>
+					<option id="93 ">Making the perfect cup of tea.</option>
+					<option id="94 ">Mapmaking </option>
+					<option id="95 ">Martial arts </option>
+					<option id="96 ">Massages (giving or receiving)</option>
+					<option id="97 ">Mixology (cocktails)</option>
+					<option id="98 ">Modeling </option>
+					<option id="99 ">Motorcycles or dirtbikes</option>
+					<option id="100 ">Mountains </option>
+					<option id="101 ">Movies</option>
+					<option id="102 ">Music (Alternative)</option>
+					<option id="103 ">Music (Classical)</option>
+					<option id="104 ">Music (Country)</option>
+					<option id="105 ">Music (Disco)</option>
+					<option id="106 ">Music (EDM)</option>
+					<option id="107 ">Music (Ethnic)</option>
+					<option id="108 ">Music (Funk)</option>
+					<option id="109 ">Music (Gospel)</option>
+					<option id="110 ">Music (HipHop)</option>
+					<option id="111 ">Music (Indie)</option>
+					<option id="112 ">Music (Jazz)</option>
+					<option id="113 ">Music (K-Pop)</option>
+					<option id="114 ">Music (R&B)</option>
+					<option id="115 ">Music (Rap)</option>
+					<option id="116 ">Music (Rock)</option>
+					<option id="117 ">Mythology and folklore</option>
+					<option id="118 ">Nail art, manicures, and pedicures</option>
+					<option id="119 ">Nature walks</option>
+					<option id="120 ">Numerology </option>
+					<option id="121 ">Online classes </option>
+					<option id="122 ">Open windows </option>
+					<option id="123 ">Organization </option>
+					<option id="124 ">Painting </option>
+					<option id="125 ">Papercrafting</option>
+					<option id="126 ">PDA (public displays of affection)</option>
+					<option id="127 ">Pets </option>
+					<option id="128 ">Photography</option>
+					<option id="129 ">Piercings (ears, nose, navel, etc.)</option>
+					<option id="130 ">Pilates</option>
+					<option id="131 ">Playing a musical instrument</option>
+					<option id="132 ">Plays / stage productions</option>
+					<option id="133 ">Podcasts </option>
+					<option id="134 ">Porcelain dolls</option>
+					<option id="135 ">Postcards</option>
+					<option id="136 ">Pottery / ceramics</option>
+					<option id="137 ">Pyrotechnics / Fireworks</option>
+					<option id="138 ">Quiet nights at home</option>
+					<option id="139 ">Quilting</option>
+					<option id="140 ">Rain </option>
+					<option id="141 ">Reading books to others</option>
+					<option id="142 ">Rivers and streams</option>
+					<option id="143 ">Road trips</option>
+					<option id="144 ">Rock climbing</option>
+					<option id="145 ">Roller coasters & other thrill rides</option>
+					<option id="146 ">Roller skating or ice skating </option>
+					<option id="147 ">Sandcastles</option>
+					<option id="148 ">Scavenger hunts</option>
+					<option id="149 ">Scrapbooking </option>
+					<option id="150 ">Sculpting</option>
+					<option id="151 ">Seashells </option>
+					<option id="152 ">Simplicity </option>
+					<option id="153 ">Skiing or snowboarding</option>
+					<option id="154 ">Skipping stones</option>
+					<option id="155 ">Slam poetry</option>
+					<option id="156 ">Snow</option>
+					<option id="157 ">Snow globes</option>
+					<option id="158 ">Soaking up the ambiance (of a favorite place) </option>
+					<option id="159 ">Soap carving </option>
+					<option id="160 ">Soap making</option>
+					<option id="161 ">Spa treatments</option>
+					<option id="162 ">Spectacular views</option>
+					<option id="163 ">Sports </option>
+					<option id="164 ">Stand up comedy</option>
+					<option id="165 ">Steampunk </option>
+					<option id="166 ">Stonecrafting / stone-carving</option>
+					<option id="167 ">Storm chasing Storytelling </option>
+					<option id="168 ">Sudoku </option>
+					<option id="169 ">Sunrises or sunsets</option>
+					<option id="170 ">Superheroes</option>
+					<option id="171 ">Surfing or windsurfing</option>
+					<option id="172 ">Swings</option>
+					<option id="173 ">Tarot </option>
+					<option id="174 ">Tattoos</option>
+					<option id="175 ">The ocean / the beach Thunderstorms </option>
+					<option id="176 ">Traditional dishes</option>
+					<option id="177 ">Trains </option>
+					<option id="178 ">Traveling</option>
+					<option id="179 ">Tree forts or treehouses</option>
+					<option id="180 ">Tutoring </option>
+					<option id="181 ">Ugly sweaters</option>
+					<option id="182 ">Urban exploring </option>
+					<option id="183 ">Web design (CSS, JavaScript) </option>
+					<option id="184 ">Wildflowers</option>
+					<option id="185 ">Windchimes </option>
+					<option id="186 ">Woodcrafting</option>
+					<option id="187 ">Word puzzles</option>
+					<option id="188 ">Writing books</option>
+					<option id="189 ">Writing poetry</option>
+					<option id="190 ">Yoga</option>
+					
+				</select>
+
+				<input type="button"  id="2but" value="Submit Like">
+
+						<ul id="list2">
+						</ul>
+				<br>
+				<label for="Bio">Bio</label>
+				<br>
+				<!-- <input id="Bio" type="textarea" name="Bio" id="Use 500 characters to write about yourself!!" maxlength="500"> -->
+				<textarea id ="Bio" rows="10" cols="33" class="list" maxlength="500">Use 500 characters to write about yourself!!
+				
+				</textarea>
+					
+			</div>
+		</form></fieldset>
+		<!-- <input type="button" id="Update Profile" id="update"> -->
+
+			<!-- the user can update-->
+	<div class="divClass">
+		<p class="pClass">Insert paragraph here/ we'll add images later</p> 
+      
+	</div>
+	<script> 
+	
+
+		$('#lbut').click(function(){
+			$("#listl").append('<li>'+ $('#Dislikes').val() +'</li>');
+
+		});
+
+		$('#2but').click(function(){
+			$("#list2").append('<li>'+ $('#Likes').val() +'</li>');
+
+		});
+
+</script>
+
+  <input type="button" value="Update Profile" id="UpPro">
+
+	<input type="button" value="Click here to find matches!" id="findDirect">
+
+	<!-- Here is a comment -->
+
+
+	<p>Here is a <span style="font-style:bold;color:rgb(98, 0, 255);">paragraph</span> of some text</p>
+	<script src="js/profile.js"></script>
+</body>
+</html>
